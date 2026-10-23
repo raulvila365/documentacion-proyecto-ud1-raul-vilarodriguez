@@ -58,6 +58,7 @@ public final class GestorIncidencias {
      * @param texto texto que se desea buscar.
      * @return lista de incidencias encontradas,
      *         o una lista vacía si no hay coincidencias.
+     * @throws NullPointerException si el texto es {@code null}.
      */
 
     public List<Incidencia> buscar(String texto) {

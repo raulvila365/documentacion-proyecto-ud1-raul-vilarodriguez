@@ -17,11 +17,17 @@ con ordenadores, impresoras o conexiones a Internet.
 - IntelliJ IDEA.
 
 ## Estructura del proyecto
-El proyecto contiene cuatro clases principales:
-- **App.java:** ejecuta la aplicación.
-- **GestorIncidencias.java:** gestiona y busca las incidencias.
-- **Incidencia.java:** guarda la información de cada incidencia.
-- **IncidenciaNoEncontradaException.java:** controla los errores al buscar incidencias.
+
+Los archivos principales son:
+
+- `src/main/java/`: contiene las cuatro clases Java.
+- `App.java`: ejecuta la aplicación.
+- `GestorIncidencias.java`: gestiona las incidencias.
+- `Incidencia.java`: guarda los datos de una incidencia.
+- `IncidenciaNoEncontradaException.java`: controla los errores.
+- `pom.xml`: configuración de Maven.
+- `README.md`: información del proyecto.
+- `docs/apidocs/`: documentación Javadoc generada.
 
 ## Clases principales
 | Clase | Descripción |
@@ -35,6 +41,11 @@ El proyecto contiene cuatro clases principales:
 Para compilar y ejecutar el proyecto:
 ```bash
 mvn clean compile exec:java
+```
+También podemos compilar y ejecutar con Maven Wrapper:
+
+```powershell
+.\mvnw.cmd clean compile exec:java
 ```
 
 ## Documentación Javadoc
